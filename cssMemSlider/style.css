@@ -110,6 +110,15 @@ input {
   transition: 0.3s all;
 }
 
+.action-dot:hover::before {
+  box-shadow: 0 0 0.2rem #fff inset !important;
+  background-color: #fff;
+}
+
+.action-dot:active::before {
+  background-color: #71aaff;
+}
+
 #slide-1:checked ~ .bottom .action-dot:nth-child(1)::before,
 #slide-2:checked ~ .bottom .action-dot:nth-child(2)::before,
 #slide-3:checked ~ .bottom .action-dot:nth-child(3)::before,
